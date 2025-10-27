@@ -5,6 +5,8 @@ dotenv.config();
 const sequelize = require('./config/db_config.js');
 const port = 8080;
 
+const {user_schema} = require('./schemas/user_schema.js');
+
 (() => {
     sequelize.sync({ alter: true }).then(() => {
         //here there are two option to pass
