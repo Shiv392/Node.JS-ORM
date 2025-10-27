@@ -20,3 +20,8 @@ It maps database tables to JavaScript classes, making data handling more intuiti
 1. Slight performance overhead vs raw SQL
 2. Complex queries can be harder to optimize
 3. Abstracted layer may hide DB-specific features
+
+📖 Steps for this repository to follow
+1. Go to db_config.js file where we have added all db related configruation like db_name, user_type, db_password and more.
+2. Created a new user schema inside the schema folder, this schema will create a new table with all mentioned columns.
+
