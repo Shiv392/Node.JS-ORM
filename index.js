@@ -6,6 +6,9 @@ const sequelize = require('./config/db_config.js');
 const port = 8080;
 
 const {user_schema} = require('./schemas/user_schema.js');
+const routes = require('./routes/index.js')
+
+app.use(routes);
 
 (() => {
     sequelize.sync({ alter: true }).then(() => {
