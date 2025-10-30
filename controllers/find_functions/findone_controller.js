@@ -13,7 +13,8 @@ const findone_controller = async(req, res)=>{
 
     else{
         return res.status(404).json({
-            message : 'No user found'
+            message : 'No user found',
+            user : []
         })
     }
 }
